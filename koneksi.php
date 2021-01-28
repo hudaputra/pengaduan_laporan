@@ -1,5 +1,5 @@
 <?php 
-$db = 'projek_akhir_huda';
+// $db = 'projek_akhir_huda';
 $konek=mysqli_connect('localhost','root','','pengaduan_laporan_huda');
 
 // if (!$konek) {
@@ -7,5 +7,3 @@ $konek=mysqli_connect('localhost','root','','pengaduan_laporan_huda');
 // } else {
 // 	echo "lhosss";
 // }
-
- ?>
