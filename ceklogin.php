@@ -28,6 +28,7 @@ include 'koneksi.php';
   	$_SESSION['password'] = $pass;
   	$_SESSION['id_petugas'] = $id_pet;
   	$_SESSION['level'] = "petugas";
+
   	header("location: halaman_petugas.php");
   	
   }
@@ -42,6 +43,7 @@ include 'koneksi.php';
 
  if ($cek_mas>0) {
  	$data_mas = mysqli_fetch_assoc($query_mas);
+
  	if ($data_mas['username']) {
  		
  		$_SESSION['username'] = $user;
@@ -49,6 +51,8 @@ include 'koneksi.php';
  		$_SESSION['nama'] = $nama;
  		$_SESSION['nik'] = $nikk;
  		$nik = mysqli_query($konek,"SELECT nik FROM masyarakat WHERE username = '$user' AND password = '$pass' ");
+ 		$_SESSION["login"] = true;
+ 		
  		header("location:halaman_masyarakat.php?pesan=sukses");
  	} else {
  		header("location: index.php?pesan=gagal");

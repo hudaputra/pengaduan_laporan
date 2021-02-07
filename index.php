@@ -1,4 +1,9 @@
-<?php include 'koneksi.php'; ?>
+<?php 
+session_start();
+session_destroy();
+
+include 'koneksi.php'; 
+?>
 <!DOCTYPE html>
 <html lang="en">
 

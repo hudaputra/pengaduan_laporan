@@ -1,3 +1,15 @@
+<?php 
+session_start();
+
+if (!isset($_SESSION["login"])) {
+	header("location:index.php");
+	exit;
+}
+
+include "koneksi.php";
+$user = $_SESSION['username'];
+$pass = $_SESSION['password'];
+ ?>
 <!DOCTYPE html>
 <html>
 
@@ -115,10 +127,6 @@
 
 <body onload="waktu()">
 	<?php
-	include 'koneksi.php';
-	session_start();
-	$user = $_SESSION['username'];
-	$pass = $_SESSION['password'];
 	date_default_timezone_set("Asia/Jakarta");
 	$tgl = date("d F Y");
 	function hari_ini()
