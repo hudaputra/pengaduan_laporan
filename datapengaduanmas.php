@@ -1,6 +1,11 @@
 <?php
 include 'koneksi.php';
 session_start();
+if (!isset($_SESSION["login"])) {
+	header("location:index.php");
+	exit;
+}
+
 $tgl = date("d F Y  G.i");
 date_default_timezone_set("Asia/Jakarta");
 function hari_ini()

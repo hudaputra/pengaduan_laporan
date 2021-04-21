@@ -1,4 +1,11 @@
-<?php include 'koneksi.php';
+<?php 
+include 'koneksi.php';
+session_start();
+
+if (!isset($_SESSION['password'])) {
+	header("location:index.php");
+	exit;
+}
 $nik = $_GET['nik'];
 $query = mysqli_query($konek, "SELECT * FROM masyarakat WHERE nik = '$nik' ");
 while ($data = mysqli_fetch_array($query)) {

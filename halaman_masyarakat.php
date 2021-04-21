@@ -1,15 +1,15 @@
-<?php 
-session_start();
+<!-- <?php
+		session_start();
 
-if (!isset($_SESSION["login"])) {
-	header("location:index.php");
-	exit;
-}
+		if (!isset($_SESSION["login"])) {
+			header("location:index.php");
+			exit;
+		}
 
-include "koneksi.php";
-$user = $_SESSION['username'];
-$pass = $_SESSION['password'];
- ?>
+		include "koneksi.php";
+		$user = $_SESSION['username'];
+		$pass = $_SESSION['password'];
+		?> -->
 <!DOCTYPE html>
 <html>
 
@@ -210,7 +210,9 @@ $pass = $_SESSION['password'];
 	<?php
 	if ($_SESSION['password'] == "") {
 		header("location:index.php?pesan=gagal");
-	}	 ?>
+	}
+	$_SESSION['login'] = true;
+	?>
 
 
 	<div class="limiter">

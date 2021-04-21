@@ -1,6 +1,10 @@
 <?php
 include 'koneksi.php';
 session_start();
+if (!isset($_SESSION["login"])) {
+	header("location:index.php");
+	exit;
+}
 date_default_timezone_set("Asia/Jakarta");
 $tgl = date("d F Y  G.i");
 // $nik = $_GET['nik'];
