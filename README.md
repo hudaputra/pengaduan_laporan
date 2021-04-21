@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # [Start Bootstrap - SB Admin 2](https://startbootstrap.com/theme/sb-admin-2/)
 
 [SB Admin 2](https://startbootstrap.com/theme/sb-admin-2/) is an open source admin dashboard theme for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/).
@@ -63,3 +64,7 @@ Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework
 ## Copyright and License
 
 Copyright 2013-2020 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-resume/blob/gh-pages/LICENSE) license.
+=======
+## Sistem Informasi Laporan Pengaduan Masyarakat
+Pengaduan laporan adalah sebuah sistem informasi yang menyediakan layanan untuk masyarakat, jika mengalami sebuah permasalahan di bagian tingkat desa/kelurahan, maka masyarakat bisa mengirimkan laporan pengaduan dan data akan dikirimkan k pihak petugas atau terkait. dengan memanfaatkan sistem informasi ini maka hal tersebut akan mudah dilakukan.
+>>>>>>> a883187ec504a9fb705510b892fc41d510421428
